@@ -1,0 +1,125 @@
+:root {
+  --cinza: #aaa;
+  --vermelha: #e93d50;
+  --vermelha-escura: #af303f;
+  --branca: #fff;
+  --luz: rgb(229, 255, 0);
+}
+
+body {
+  align-items: center;
+  background-image: url(images/fundo.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--branca);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.radio{
+  font-size: 30px;
+}
+
+.teclado {
+  background: #51a6f5;
+  border-radius: 35px;
+  display: grid;
+  box-shadow: 6px 8px 0 6px #4848b9, 10px 10px 10px #000;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 15px;
+}
+
+.mar{
+  background-image: url(images/mar.png);
+  background-repeat: no-repeat;
+  background-size: 112%;
+}
+
+.gaivota{
+  background-image: url(images/gaivota.png);
+  background-repeat: no-repeat;
+  background-size: 112%;
+}
+
+.coco{
+    background-image: url(images/coco.png);
+    background-repeat: no-repeat;
+    background-size: 95%;
+  }
+
+  .areia{
+    background-image: url(images/areia.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .baleia{
+    background-image: url(images/baleia.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .caranguejo{
+    background-image: url(images/caranguejo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .camarao{
+    background-image: url(images/camarão.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .sereia{
+    background-image: url(images/sereia.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .golfinho{
+    background-image: url(images/golfinho.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+.tecla {
+  background-color: var(--branca);
+  border-radius: 30px;
+  color: var(--vermelha);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+
+.tecla.ativa,
+.tecla:active {
+  background-color: var(--vermelha);
+  border: 4px solid  var(--vermelha);
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+  color: var(--branca);
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--luz);
+}
+
+.tecla.ativa:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+}
